@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { ChevronLeft } from "lucide-react";
 import toast from "react-hot-toast";
 import { nanoid } from "nanoid";
+import Link from "next/link";
 
 export default function CheckoutPage() {
   const searchParams = useSearchParams();
@@ -217,6 +218,9 @@ export default function CheckoutPage() {
                 >
                   I agree to the terms and safety policy
                 </label>
+              </div>
+              <div>
+                For PromoCodes visit: <Link href={'https://github.com/Parth-Gupta05/Travelhighway'}/>
               </div>
             </div>
           </div>
