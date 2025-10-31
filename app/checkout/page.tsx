@@ -60,7 +60,7 @@ export default function CheckoutPage() {
       toast.dismiss(loadingToast);
       console.error(err);
       setPromoValue(0);
-      toast.error("Invalid promo code or server error");
+      toast.error("Invalid promo code");
     }
   };
 
@@ -219,8 +219,8 @@ export default function CheckoutPage() {
                   I agree to the terms and safety policy
                 </label>
               </div>
-              <div>
-                For PromoCodes visit: <Link href={'https://github.com/Parth-Gupta05/Travelhighway'}/>
+              <div className="text-sm text-gray-700 mt-4.5">
+                For Promo Codes visit: <Link className="text-blue-700" href={'https://github.com/Parth-Gupta05/Travelhighway'}> Github</Link>
               </div>
             </div>
           </div>

@@ -7,8 +7,7 @@ function ConfirmationPage() {
     const params = useParams();
     const router = useRouter();
     const refId = params.id || params.refId;
-    
-    console.log(refId);
+
 
     const handleBackToHome = () => {
         router.push('/');

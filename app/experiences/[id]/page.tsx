@@ -7,14 +7,14 @@ interface ExperiencePageProps {
 }
 
 export default async function ExperiencePage({ params }: ExperiencePageProps) {
-  console.log("Params:", params);
+
   const { id } = await params;
-  console.log(id);
+
 
   // Fetch data based on id
   const experienceraw = await getExperienceById(id);
   const experience = experienceraw.data;
-  console.log(experience);
+
 
   if (!experience) {
     notFound(); // shows 404 page if invalid ID
